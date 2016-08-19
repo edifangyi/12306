@@ -1,0 +1,156 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <!-- 欢迎页背景引用刚才写好的 -->
+        <item name="android:windowBackground">@drawable/wel_page</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!-- <item name="android:windowIsTranslucent">true</item> --> <!-- 透明背景不要了 -->
+    </style>
+
+    <style name="InitializeTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- 欢迎页背景引用刚才写好的 -->
+        <item name="android:windowBackground">@drawable/splash_image</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!-- <item name="android:windowIsTranslucent">true</item> --> <!-- 透明背景不要了 -->
+    </style>
+
+    <!--低栏Button的样式-->
+    <style name="radioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/padding_mid</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_rb_text_color</item>
+        <item name="android:textSize">@dimen/text_size_mid</item>
+        <item name="android:background">@drawable/selector_rb_bg</item>
+    </style>
+
+    <!--默认分割线-->
+    <style name="splitLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_standard</item>
+        <item name="android:layout_marginRight">@dimen/margin_standard</item>
+        <item name="android:background">@color/grey_line</item>
+    </style>
+
+    <!--车站选择-->
+    <style name="mainBtnTextViewStation">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_bigbigger</item>
+    </style>
+
+    <!--出发日期\出发时间\席别-->
+    <style name="mainTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_mid</item>
+    </style>
+
+    <!--btn 出发日期\出发时间\席别-->
+    <style name="mainBtnTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_bigger</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_mid</item>
+    </style>
+
+    <!--cb 全部 G/D/C Z字头 T字头 K字头 其他-->
+    <style name="mainCheckBox">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">37dp</item>
+        <item name="android:layout_weight">1</item>
+        <!--<item name="android:padding">@dimen/padding_small</item>-->
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/selector_cb_text_color</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:background">@drawable/selector_cb_bg</item>
+    </style>
+
+    <!-- 乘客名单-->
+    <style name="mainBtnTextViewPassenger">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/padding_small</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_payway</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <!--main 布局主题-->
+    <style name="mainLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">@dimen/padding_small</item>
+        <item name="android:paddingLeft">@dimen/padding_big</item>
+        <item name="android:paddingRight">@dimen/padding_big</item>
+        <item name="android:paddingTop">@dimen/padding_small</item>
+    </style>
+
+    <!--Bcv-->
+    <style name="bcvStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/padding_small</item>
+        <item name="android:paddingLeft">@dimen/padding_mid</item>
+        <item name="android:paddingRight">@dimen/padding_mid</item>
+        <item name="android:paddingTop">@dimen/padding_small</item>
+    </style>
+
+    <!--包裹bcv控件的布局-->
+    <style name="bcvLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_bigger</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!--&lt;!&ndash;自定义的progressbar&ndash;&gt;-->
+    <!--<style name="mProgress_circle" parent="@android:style/Widget.ProgressBar">-->
+    <!--<item name="android:indeterminateDrawable">@drawable/refresh_progress</item>-->
+    <!--<item name="android:minWidth">50dp</item>-->
+    <!--<item name="android:minHeight">50dp</item>-->
+    <!--<item name="android:maxWidth">60dp</item>-->
+    <!--<item name="android:maxHeight">60dp</item>-->
+    <!--</style>-->
+    <!---->
+    <!--<style name="huaching_textAppearance">-->
+    <!--<item name="android:textColor">@android:color/primary_text_dark</item>-->
+    <!--<item name="android:textColorHighlight">#FFFF9200</item>-->
+    <!--<item name="android:textColorHint">#808080</item>-->
+    <!--<item name="android:textColorLink">#5C5CFF</item>-->
+    <!--<item name="android:textSize">14sp</item>-->
+    <!--<item name="android:textStyle">normal</item>-->
+    <!--</style>-->
+    <!--&lt;!&ndash; pickView&ndash;&gt;-->
+    <!--<declare-styleable name="wheelview">-->
+    <!--<attr name="gravity">-->
+    <!--<enum name="center" value="17"/>-->
+    <!--<enum name="left" value="3"/>-->
+    <!--<enum name="right" value="5"/>-->
+    <!--</attr>-->
+    <!--</declare-styleable>-->
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/order_theme_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout style="@style/bcvLinearLayout">
+
+        <View
+            style="@style/splitLine"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+
+        <com.fangyi.a12306.view.BtnClickView
+            android:id="@+id/bcv_login"
+            style="@style/bcvStyle">
+
+        </com.fangyi.a12306.view.BtnClickView>
+
+        <View style="@style/splitLine" />
+
+        <com.fangyi.a12306.view.BtnClickView
+            android:id="@+id/bcv_register"
+            style="@style/bcvStyle">
+
+        </com.fangyi.a12306.view.BtnClickView>
+
+        <View
+            style="@style/splitLine"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/bcvLinearLayout">
+
+        <View
+            style="@style/splitLine"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+
+        <com.fangyi.a12306.view.BtnClickView
+            android:id="@+id/bcv_trip_guidance"
+            style="@style/bcvStyle">
+
+        </com.fangyi.a12306.view.BtnClickView>
+
+        <View style="@style/splitLine" />
+
+        <com.fangyi.a12306.view.BtnClickView
+            android:id="@+id/bcv_warm_service"
+            style="@style/bcvStyle">
+
+        </com.fangyi.a12306.view.BtnClickView>
+
+        <View
+            style="@style/splitLine"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/bcvLinearLayout">
+
+        <View
+            style="@style/splitLine"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+
+        <com.fangyi.a12306.view.BtnClickView
+            android:id="@+id/bcv_tourism_leisure"
+            style="@style/bcvStyle">
+
+        </com.fangyi.a12306.view.BtnClickView>
+
+        <View
+            style="@style/splitLine"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/bcvLinearLayout">
+
+        <View
+            style="@style/splitLine"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+
+        <com.fangyi.a12306.view.BtnClickView
+            android:id="@+id/bcv_system_informs"
+            style="@style/bcvStyle">
+
+        </com.fangyi.a12306.view.BtnClickView>
+
+        <View style="@style/splitLine" />
+
+        <com.fangyi.a12306.view.BtnClickView
+            android:id="@+id/bcv_about"
+            style="@style/bcvStyle">
+
+        </com.fangyi.a12306.view.BtnClickView>
+
+        <View
+            style="@style/splitLine"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

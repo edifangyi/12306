@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_theme">
+    <!--actionBar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@drawable/dev_slide_img"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big" />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="通知"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/text_size_mid"/>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/home_info"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/home_inform"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_alignParentRight="true"/>-->
+
+    </RelativeLayout>
+
+    <com.fangyi.a12306.view.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:gravity="center_vertical"
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_rb_checked"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/bottom_main"
+            style="@style/radioButton"
+            android:text="车票预订" />
+
+        <RadioButton
+            android:id="@+id/bottom_order"
+            style="@style/radioButton"
+            android:text="订单查询" />
+
+        <RadioButton
+            android:id="@+id/bottom_me"
+            style="@style/radioButton"
+            android:text="我的12306" />
+    </RadioGroup>
+
+</LinearLayout>
