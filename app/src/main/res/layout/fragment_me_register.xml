@@ -69,13 +69,52 @@
                 android:layout_marginRight="0dp" />
 
             <com.fangyi.a12306.view.TvEtView
+
                 android:id="@+id/evet_reg_id_name"
                 style="@style/bcvStyle" />
 
             <View style="@style/splitLine" />
 
-            <com.fangyi.a12306.view.TvEtView
-                android:id="@+id/evet_reg_id_type"
+            <LinearLayout
+                android:id="@+id/ll_reg_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.fangyi.a12306.view.BtnRadioView
+                    android:id="@+id/br_reg_id_sex"
+                    style="@style/bcvStyle" />
+
+                <View style="@style/splitLine" />
+
+                <com.fangyi.a12306.view.BtnRadioView
+                    android:id="@+id/br_reg_id_birth_date"
+                    style="@style/bcvStyle" />
+
+                <View style="@style/splitLine" />
+
+                <LinearLayout
+                    android:id="@+id/ll_reg_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.fangyi.a12306.view.BtnRadioView
+                        android:id="@+id/br_reg_id_country"
+                        style="@style/bcvStyle" />
+
+                    <View style="@style/splitLine" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.fangyi.a12306.view.BtnRadioView
+                android:id="@+id/br_reg_id_type"
                 style="@style/bcvStyle" />
 
             <View style="@style/splitLine" />
@@ -128,7 +167,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/padding_small"
-            android:text=""
+            android:text="附加信息"
             android:textColor="@color/black"
             android:textSize="@dimen/text_size_big" />
 
@@ -142,7 +181,7 @@
                 android:layout_marginRight="0dp" />
 
             <com.fangyi.a12306.view.BtnRadioView
-                android:id="@+id/evet_reg_passenger_type"
+                android:id="@+id/br_reg_passenger_type"
                 style="@style/bcvStyle" />
 
 
@@ -160,14 +199,22 @@
 
             <CheckBox
                 android:id="@+id/cb_remember"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_bigger"
-                android:layout_weight="1"
-                android:text="记住密码"
+                android:text="同意"
                 android:textColor="@color/text_color_mid" />
 
+            <TextView
+                android:id="@+id/btn_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_mid"
+                android:text="服务条款"
+                android:textColor="@color/blue_marker" />
+
         </LinearLayout>
+
 
         <Button
             android:id="@+id/btn_login"

@@ -23,7 +23,7 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/margin_bigger"
         android:layout_marginRight="@dimen/margin_bigger"
-        android:layout_weight="5"
+        android:layout_weight="3"
         android:background="@null"
         android:gravity="center_vertical"
         android:text="二代身份证"

@@ -49,7 +49,7 @@ public class BtnRadioView extends LinearLayout {
         super(context, attrs);
         initView(context);
         title = attrs.getAttributeValue("http://schemas.android.com/apk/res-auto", "title");
-        content = attrs.getAttributeValue("http://schemas.android.com/apk/res-auto", "hint");
+        content = attrs.getAttributeValue("http://schemas.android.com/apk/res-auto", "content");
     }
 
     //要这只样式的时候使用
@@ -65,7 +65,7 @@ public class BtnRadioView extends LinearLayout {
         brTitle.setText(title);
     }
 
-    public void setContent(String title) {
+    public void setContent(String content) {
         brContent.setText(content);
     }
 

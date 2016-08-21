@@ -36,6 +36,28 @@
 
     </array>
 
+    <!--证件类型-->
+    <array name="id_type">
+        <item>二代身份证</item>
+        <item>港澳通行证</item>
+        <item>澳门通行证</item>
+        <item>护照</item>
+    </array>
+
+    <!--性别-->
+    <array name="id_sex">
+        <item>男</item>
+        <item>女</item>
+    </array>
+
+    <!--旅客类型-->
+    <array name="passenger_type">
+        <item>成人</item>
+        <item>儿童</item>
+        <item>学生</item>
+        <item>残军</item>
+    </array>
+
     <string name="order_tips">1.订单信息在本应用保存期限为30日。
     \n2.在本应用购票后，没有换取纸质车票的，可不晚于开车前30分钟在本网站办理改签、退票业务，或不晚于开车前48小时在本网站办理"变更到站"业务。
     \n3.在本应用办理退票，只能逐次单张办理。
