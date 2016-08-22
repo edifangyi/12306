@@ -54,7 +54,7 @@ public class FragmentFactory {
     }
 
     /**
-     * 车站选择、订单查询、我的12306
+     * 车票预订、订单查询、我的12306
      * @param resId
      * @return
      */

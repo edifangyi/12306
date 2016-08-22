@@ -90,8 +90,10 @@ public class RegisterFragment extends BaseFragment {
         evetRegUsername.setHint("字母、数字或“_”，6-30位");
         evetRegPassword.setTitle("密       码");
         evetRegPassword.setHint("不少于6位");
+        evetRegPassword.setInputTypePassWord();
         evetRegPasswordConfirm.setTitle("密码确认");
         evetRegPasswordConfirm.setHint("请在此输入密码");
+        evetRegPassword.setInputTypePassWord();
         evetRegIdName.setTitle("姓       名");
         evetRegIdName.setHint("请输入真实姓名,以便购票");
         brRegIdType.setTitle("证件类型");

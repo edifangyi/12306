@@ -1,17 +1,15 @@
 package com.fangyi.a12306.fragmengt.me.imp;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
-import com.fangyi.a12306.R;
 import com.fangyi.a12306.fragmengt.base.BaseFragment;
 import com.fangyi.a12306.utils.CommonUtils;
-import com.fangyi.a12306.view.TvEtView;
-import com.socks.library.KLog;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -20,20 +18,14 @@ import butterknife.ButterKnife;
 
 public class AboutFragment extends BaseFragment {
 
-    @BindView(R.id.evet_username)
-    TvEtView evetUsername;
-    @BindView(R.id.evet_password)
-    TvEtView evetPassword;
-
-
 
     @Override
     protected View getSuccessView() {
-        CommonUtils.setTitle(getActivity(), "登陆");
-        View view = View.inflate(getActivity(), R.layout.fragment_me_login, null);
-        ButterKnife.bind(this, view);
-        setTvEtTitle();
-        setListener();
+        CommonUtils.setTitle(getActivity(), "关于");
+        TextView view = new TextView(getActivity());
+        view.setText("关于");
+        view.setTextColor(Color.RED);
+        view.setTextSize(50);
         return view;
     }
 
@@ -42,15 +34,6 @@ public class AboutFragment extends BaseFragment {
     }
 
     private void setTvEtTitle() {
-        evetUsername.setTitle("用户名");
-        evetUsername.setHint("请输入用户名");
-        evetPassword.setTitle("密    码");
-        evetPassword.setHint("请输入密码");
-        evetPassword.setInputTypePassWord();
-
-        String a = evetUsername.getInput();
-
-        KLog.e(a);
     }
 
     @Override
