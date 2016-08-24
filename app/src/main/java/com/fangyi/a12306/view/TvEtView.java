@@ -36,6 +36,7 @@ public class TvEtView extends LinearLayout {
         //最后一个参数：添加谁进来，谁就是setting_item_view的父亲，布局文件挂载在传进来的这个控件上
         View view = View.inflate(context, R.layout.tv_et_view, TvEtView.this);
         ButterKnife.bind(this, view);
+
     }
 
 
