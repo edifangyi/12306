@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/order_theme_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout style="@style/bcvLinearLayout">
+
+        <View
+            style="@style/splitLine"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+
+        <com.fangyi.a12306.view.TvEtView
+            android:id="@+id/evet_username"
+            style="@style/bcvStyle">
+
+        </com.fangyi.a12306.view.TvEtView>
+
+        <View style="@style/splitLine" />
+
+        <com.fangyi.a12306.view.TvEtView
+            android:id="@+id/evet_password"
+            style="@style/bcvStyle">
+
+        </com.fangyi.a12306.view.TvEtView>
+
+        <View
+            style="@style/splitLine"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_remember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_bigger"
+            android:layout_weight="1"
+            android:text="记住密码"
+            android:textColor="@color/text_color_mid"/>
+
+        <CheckBox
+            android:id="@+id/cb_auto_Login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text_color_mid"
+            android:text="自动登录" />
+
+        <TextView
+            android:id="@+id/btn_orget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_bigger"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="忘记密码 >" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/margin_mid"
+        android:layout_marginLeft="@dimen/margin_standard"
+        android:layout_marginRight="@dimen/margin_standard"
+        android:layout_marginTop="@dimen/margin_mid"
+        android:background="@drawable/shap_btn_bg"
+        android:text="登陆"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_mid" />
+
+
+</LinearLayout>

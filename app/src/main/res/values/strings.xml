@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">12306</string>
+
+    <!--车站选择-->
+    <array name="station_selection">
+        <item>最近常用</item>
+        <item>热点车站</item>
+        <item>车站列表</item>
+    </array>
+
+    <!--订单查询-->
+    <array name="order_inquiry">
+        <item>已完成订单</item>
+        <item>未完成订单</item>
+    </array>
+
+    <!--出发时间-->
+    <array name="start_time_items">
+        <item>00:00--24:00</item>
+        <item>00:00--06:00</item>
+        <item>06:00--12:00</item>
+        <item>12:00--18:00</item>
+        <item>12:00--18:00</item>
+    </array>
+
+    <array name="seat_items">
+        <item>不限</item>
+        <item>商务座</item>
+        <item>特等座</item>
+        <item>一等座</item>
+        <item>二等座</item>
+        <item>高级软卧</item>
+        <item>软卧</item>
+        <item>硬卧</item>
+        <item>硬座</item>
+
+    </array>
+
+    <!--证件类型-->
+    <array name="id_type">
+        <item>二代身份证</item>
+        <item>港澳通行证</item>
+        <item>澳门通行证</item>
+        <item>护照</item>
+    </array>
+
+    <!--性别-->
+    <array name="id_sex">
+        <item>男</item>
+        <item>女</item>
+    </array>
+
+    <!--旅客类型-->
+    <array name="passenger_type">
+        <item>成人</item>
+        <item>儿童</item>
+        <item>学生</item>
+        <item>残军</item>
+    </array>
+
+    <string name="order_tips">1.订单信息在本应用保存期限为30日。
+    \n2.在本应用购票后，没有换取纸质车票的，可不晚于开车前30分钟在本网站办理改签、退票业务，或不晚于开车前48小时在本网站办理"变更到站"业务。
+    \n3.在本应用办理退票，只能逐次单张办理。
+    \n4.车票改签、变更到站均只能办理一次。已经改签或变更到站的车票不再办理改签；对已改签车票、团体票暂不提供"变更到站"服务。
+    \n5.退票、改签、变更到站后，如有应退票款，按购票时所使用的在线支付工具相关规定，将在规定时间内退还至原在线支付工具账户，请及时查询。如有疑问，请致电12306人工客服查询。
+    \n6.如需取消或查看车票快递状态，请点击"快递详情"。
+    \n7.退保或查看电子保单状态，请点击"乘意险"。</string>
+
+</resources>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/order_theme_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/order_theme_color"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:text="基本信息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_big" />
+
+        <LinearLayout
+            style="@style/bcvLinearLayout"
+            android:layout_marginTop="@dimen/margin_1px">
+
+            <View
+                style="@style/splitLine"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp" />
+
+            <com.fangyi.a12306.view.TvEtView
+                android:id="@+id/evet_reg_username"
+                style="@style/bcvStyle" />
+
+            <View style="@style/splitLine" />
+
+            <com.fangyi.a12306.view.TvEtView
+                android:id="@+id/evet_reg_password"
+                style="@style/bcvStyle" />
+
+            <View style="@style/splitLine" />
+
+            <com.fangyi.a12306.view.TvEtView
+                android:id="@+id/evet_reg_password_confirm"
+                style="@style/bcvStyle" />
+
+            <View
+                style="@style/splitLine"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:text="详细信息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_big" />
+
+        <LinearLayout
+            style="@style/bcvLinearLayout"
+            android:layout_marginTop="@dimen/margin_1px">
+
+            <View
+                style="@style/splitLine"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp" />
+
+            <com.fangyi.a12306.view.TvEtView
+
+                android:id="@+id/evet_reg_id_name"
+                style="@style/bcvStyle" />
+
+            <View style="@style/splitLine" />
+
+            <LinearLayout
+                android:id="@+id/ll_reg_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.fangyi.a12306.view.BtnRadioView
+                    android:id="@+id/br_reg_id_sex"
+                    style="@style/bcvStyle" />
+
+                <View style="@style/splitLine" />
+
+                <com.fangyi.a12306.view.BtnRadioView
+                    android:id="@+id/br_reg_id_birth_date"
+                    style="@style/bcvStyle" />
+
+                <View style="@style/splitLine" />
+
+                <LinearLayout
+                    android:id="@+id/ll_reg_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.fangyi.a12306.view.BtnRadioView
+                        android:id="@+id/br_reg_id_country"
+                        style="@style/bcvStyle" />
+
+                    <View style="@style/splitLine" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.fangyi.a12306.view.BtnRadioView
+                android:id="@+id/br_reg_id_type"
+                style="@style/bcvStyle" />
+
+            <View style="@style/splitLine" />
+
+            <com.fangyi.a12306.view.TvEtView
+                android:id="@+id/evet_reg_id_num"
+                style="@style/bcvStyle" />
+
+            <View
+                style="@style/splitLine"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:text="联系方式"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_big" />
+
+        <LinearLayout
+            style="@style/bcvLinearLayout"
+            android:layout_marginTop="@dimen/margin_1px">
+
+            <View
+                style="@style/splitLine"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp" />
+
+            <com.fangyi.a12306.view.TvEtView
+                android:id="@+id/evet_reg_phone_number"
+                style="@style/bcvStyle" />
+
+            <View style="@style/splitLine" />
+
+            <com.fangyi.a12306.view.TvEtView
+                android:id="@+id/evet_reg_mail"
+                style="@style/bcvStyle" />
+
+
+            <View
+                style="@style/splitLine"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:text="附加信息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_big" />
+
+        <LinearLayout
+            style="@style/bcvLinearLayout"
+            android:layout_marginTop="@dimen/margin_1px">
+
+            <View
+                style="@style/splitLine"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp" />
+
+            <com.fangyi.a12306.view.BtnRadioView
+                android:id="@+id/br_reg_passenger_type"
+                style="@style/bcvStyle" />
+
+
+            <View
+                style="@style/splitLine"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_bigger"
+                android:text="同意"
+                android:textColor="@color/text_color_mid" />
+
+            <TextView
+                android:id="@+id/btn_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_mid"
+                android:text="服务条款"
+                android:textColor="@color/blue_marker" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="@dimen/margin_mid"
+            android:layout_marginLeft="@dimen/margin_standard"
+            android:layout_marginRight="@dimen/margin_standard"
+            android:layout_marginTop="@dimen/margin_mid"
+            android:background="@drawable/shap_btn_bg"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_mid" />
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/order_theme_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout style="@style/bcvLinearLayout">
+
+        <View
+            style="@style/splitLine"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+
+        <com.fangyi.a12306.view.BtnClickView
+            android:id="@+id/bcv_positive_delay_query"
+            style="@style/bcvStyle" />
+
+        <View style="@style/splitLine" />
+
+        <com.fangyi.a12306.view.BtnClickView
+            android:id="@+id/bcv_trips_query"
+            style="@style/bcvStyle" />
+
+        <View style="@style/splitLine" />
+
+        <com.fangyi.a12306.view.BtnClickView
+            android:id="@+id/bcv_fare_query"
+            style="@style/bcvStyle" />
+
+        <View style="@style/splitLine" />
+
+        <com.fangyi.a12306.view.BtnClickView
+            android:id="@+id/bcv_qutlets_query"
+            style="@style/bcvStyle" />
+
+        <View style="@style/splitLine" />
+
+        <com.fangyi.a12306.view.BtnClickView
+            android:id="@+id/bcv_station_number_inquiry"
+            style="@style/bcvStyle" />
+
+        <View style="@style/splitLine" />
+
+        <com.fangyi.a12306.view.BtnClickView
+            android:id="@+id/bcv_sale_time_query"
+            style="@style/bcvStyle" />
+
+        <View
+            style="@style/splitLine"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

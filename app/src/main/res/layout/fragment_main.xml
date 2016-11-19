@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_mid"
+        android:paddingTop="@dimen/padding_big">
+
+        <TextView
+            android:id="@+id/btn_start_station"
+            style="@style/mainBtnTextViewStation"
+            android:text="长春" />
+
+        <ImageView
+            android:id="@+id/btn_exchange"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/main_station_exchange" />
+
+        <TextView
+            android:id="@+id/btn_arrived_station"
+            style="@style/mainBtnTextViewStation"
+            android:text="吉林" />
+
+    </LinearLayout>
+
+    <View style="@style/splitLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mainTextView"
+                android:text="出发日期" />
+
+            <TextView
+                android:id="@+id/btn_start_date"
+                style="@style/mainBtnTextView"
+                android:text="2016-08-16" />
+
+            <CheckBox
+                android:id="@+id/cb_passenger_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学生"
+                android:textSize="@dimen/text_size_mid" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mainTextView"
+                android:text="出发时间" />
+
+            <TextView
+                android:id="@+id/btn_start_time"
+                style="@style/mainBtnTextView"
+                android:text="00:00--24:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/mainTextView"
+                android:text="席        别" />
+
+            <TextView
+                android:id="@+id/btn_seat"
+                style="@style/mainBtnTextView"
+                android:text="不限" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/splitLine" />
+
+    <LinearLayout style="@style/mainLinearLayout">
+
+        <CheckBox
+            android:id="@+id/cb_type_whole"
+            style="@style/mainCheckBox"
+            android:text="全部"
+            android:textSize="@dimen/text_size_mid" />
+
+        <CheckBox
+            android:id="@+id/cb_type_GDC"
+            style="@style/mainCheckBox"
+            android:text="G/D/C" />
+
+        <CheckBox
+            android:id="@+id/cb_type_Z"
+            style="@style/mainCheckBox"
+            android:text="Z字头" />
+
+        <CheckBox
+            android:id="@+id/cb_type_T"
+            style="@style/mainCheckBox"
+            android:text="T字头" />
+
+        <CheckBox
+            android:id="@+id/cb_type_K"
+            style="@style/mainCheckBox"
+            android:text="K字头" />
+
+        <CheckBox
+            android:id="@+id/cb_type_other"
+            style="@style/mainCheckBox"
+            android:text="其他" />
+
+    </LinearLayout>
+
+    <View style="@style/splitLine" />
+
+
+    <LinearLayout style="@style/mainLinearLayout">
+
+        <TextView
+            android:id="@+id/btn_passenger_0"
+            style="@style/mainBtnTextViewPassenger"
+            android:text="乘客甲" />
+
+        <TextView
+            android:id="@+id/btn_passenger_1"
+            style="@style/mainBtnTextViewPassenger"
+            android:text="乘客乙" />
+
+
+        <TextView
+            android:id="@+id/btn_passenger_2"
+            style="@style/mainBtnTextViewPassenger"
+            android:text="乘客丙" />
+
+
+        <TextView
+            android:id="@+id/btn_passenger_3"
+            style="@style/mainBtnTextViewPassenger"
+            android:text="乘客丁" />
+
+
+        <TextView
+            android:id="@+id/btn_passenger_4"
+            style="@style/mainBtnTextViewPassenger"
+            android:text="乘客戊" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_regional_trips_query"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/margin_mid"
+        android:layout_marginLeft="@dimen/margin_standard"
+        android:layout_marginRight="@dimen/margin_standard"
+        android:background="@drawable/shap_btn_bg"
+        android:text="查询"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_mid" />
+
+    <LinearLayout style="@style/mainLinearLayout">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/text_payway" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_standard"
+            android:layout_marginRight="@dimen/margin_standard"
+            android:text="最近常用线路"
+            android:textSize="@dimen/text_size_small" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/text_payway" />
+
+    </LinearLayout>
+
+</LinearLayout>
